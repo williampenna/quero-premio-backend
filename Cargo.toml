@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 rocket = "0.4.4"
 rocket_codegen = "0.4.4"
-diesel = { version = "2.0.0", features = ["postgres"] }
+diesel = { version = "2.0.0", features = ["postgres","64-column-tables","chrono","serde_json"] }
 dotenv = "0.15.0"
 r2d2-diesel = "1.0"
 r2d2 = "0.8"
