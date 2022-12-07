@@ -1,4 +1,4 @@
-#![feature(plugin, const_fn, decl_macro, proc_macro_hygiene)]
+#![feature(plugin, decl_macro, proc_macro_hygiene)]
 #![allow(proc_macro_derive_resolution_fallback, unused_attributes)]
 
 #[macro_use]
@@ -34,7 +34,7 @@ fn rocket() -> rocket::Rocket {
         .manage(pool)
         .mount(
             "/api/v1/",
-            routes![getAll, newUser, findUser],
+            routes![get_all_users, insert_user, get_user_by_username],
         )
 }
 
