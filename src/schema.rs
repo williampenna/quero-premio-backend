@@ -5,8 +5,8 @@ diesel::table! {
         id -> Int4,
         nome -> Varchar,
         cpf -> Varchar,
-        data_criacao -> Timestamptz,
-        data_atualizacao -> Timestamptz,
+        data_criacao -> Timestamp,
+        data_atualizacao -> Timestamp,
         data_nascimento -> Date,
     }
 }
